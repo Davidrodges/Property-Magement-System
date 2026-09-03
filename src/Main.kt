@@ -1,8 +1,18 @@
+//https://strathmoreuni-my.sharepoint.com/:w:/g/personal/david_ochieng_o365_strathmore_edu/IQB8bYCGK_vyT4S6igHzsqcoAdDvDGW74N2KZwt3GcksGos?e=zdZRfQ
+//Owen Karanja - 186977
+//Adam Jerry - 190477
+//Grace Ngechu-190521
+//David Rodgers - 190505
+//Samuel Obiero - 192695
+//Lovine Muema - 190512
 fun main() {
-    println("==================================================")
-    println("          PROPERTY MANAGEMENT SYSTEM")
-    println("==================================================")
-    println()
+    println("--------------------------------------------------")
+    println("--------------------------------------------------")
+    println("-----------PROPERTY MANAGEMENT SYSTEM-------------")
+    println("--------------------------------------------------")
+    println("--------------------------------------------------")
+
+
     println("Welcome to the Property Management System!")
     println("This system allows you to register tenants and")
     println("track their monthly rent payments.")
@@ -85,9 +95,9 @@ fun main() {
     }
 
     // Display all registered tenants
-    println("==================================================")
-    println("              REGISTERED TENANTS")
-    println("==================================================")
+    println("-----------------------------------------------")
+    println("------------REGISTERED TENANTS-----------------")
+    println("-----------------------------------------------")
 
     // Loop through the collection
     for (tenant in tenants) {
@@ -97,7 +107,7 @@ fun main() {
     println()
     println("Total tenants registered: ${tenants.size}")
     println()
-    println("==================================================")
-    println("       PROPERTY MANAGEMENT SYSTEM CLOSED")
-    println("==================================================")
+    println("--------------------------------------------------")
+    println("--------PROPERTY MANAGEMENT SYSTEM CLOSED---------")
+    println("--------------------------------------------------")
 }
