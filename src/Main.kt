@@ -92,6 +92,54 @@ fun main() {
 
         println("Payment Category: $paymentCategory")
         println()
+
+        // PART 5 — Making Decisions
+
+        // Task 5.1
+        val currentBalance = monthlyRent - amountPaid
+
+        if (currentBalance <= 0) {
+            println("Rent is fully paid")
+        } else {
+            println("Rent is outstanding")
+        }
+
+        // Task 5.2
+        if (currentBalance <= 0) {
+            println("Rent is fully paid")
+        } else if (currentBalance < 10000) {
+            println("Small outstanding balance")
+        } else {
+            println("Large outstanding balance")
+        }
+
+        // Task 5.3
+        when {
+            currentBalance <= 0 -> println("Rent is fully paid")
+            currentBalance < 10000 -> println("Small outstanding balance")
+            else -> println("Large outstanding balance")
+        }
+
+        // Task 5.4
+        val monthsBehind = 2
+
+        when (monthsBehind) {
+            0 -> println("Rent is up to date")
+            in 1..2 -> println("Early arrears")
+            in 3..5 -> println("Serious arrears")
+            in 6..12 -> println("Critical arrears")
+            else -> println("Review tenant account")
+        }
+
+        // Task 5.5
+        val status = "ACTIVE"
+
+        when (status) {
+            "ACTIVE" -> println("Tenant is active and occupying the unit.")
+            "VACATED" -> println("Tenant has vacated the property.")
+            "PENDING" -> println("Tenant status is pending.")
+            else -> println("Invalid tenant status.")
+        }
     }
 
     // Display all registered tenants
